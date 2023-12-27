@@ -35,6 +35,7 @@ class AdminPanelProvider extends PanelProvider
             ->emailVerification()
             ->profile()
             ->breadcrumbs(false)
+            ->sidebarCollapsibleOnDesktop()
 
             ->colors([
                 'danger' => Color::Red,

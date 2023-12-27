@@ -20,7 +20,7 @@ class BperformanceChart extends ChartWidget
     {
 
         $data = Trend::model(Player::class)
-            ->between(start: now()->subMonthNoOverflow(), end: now())->perMonth()
+            ->between(start: now()->subYear(), end: now())->perMonth()
             ->count();
 
         return [

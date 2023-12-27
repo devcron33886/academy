@@ -3,6 +3,8 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PlayerResource\Pages;
+use App\Filament\Resources\PlayerResource\RelationManagers\PerformanceRelationManager;
+use App\Filament\Resources\PlayerResource\RelationManagers\PerformancesRelationManager;
 use App\Models\Player;
 use Coolsam\FilamentFlatpickr\Forms\Components\Flatpickr;
 use Filament\Forms;
@@ -105,7 +107,7 @@ class PlayerResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            PerformancesRelationManager::class,
         ];
     }
 

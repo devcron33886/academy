@@ -12,9 +12,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call([
-            UserSeeder::class,
-            CountrySeeder::class,
-        ]);
+        // $this->call([
+        //     UserSeeder::class,
+        //     CountrySeeder::class,
+        // ]);
+        \App\Models\Player::factory(3000)->create();
     }
 }
