@@ -37,6 +37,14 @@ class UserSeeder extends Seeder
                 'password' => bcrypt('password'),
                 'is_admin' => false,
             ],
+            [
+                'id' => 4,
+                'name' => 'Jean Claude KAMALI',
+                'email_verified_at' => now(),
+                'email' => 'claude@gmail.com',
+                'password' => bcrypt('password'),
+                'is_admin' => false,
+            ],
         ];
 
         User::insert($users);

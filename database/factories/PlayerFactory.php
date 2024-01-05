@@ -19,7 +19,7 @@ class PlayerFactory extends Factory
         return [
             'country_id' => $this->faker->numberBetween(1, 238),
             'category_id' => $this->faker->numberBetween(1, 3),
-            'user_id' => $this->faker->numberBetween(1, 3),
+            'user_id' => $this->faker->numberBetween(2, 4),
             'team_id' => $this->faker->numberBetween(1, 3),
             'name' => $this->faker->name,
             'date_of_birth' => $this->faker->date(),
@@ -36,7 +36,7 @@ class PlayerFactory extends Factory
             'medical_report' => $this->faker->word,
             'bio' => $this->faker->text,
             'status' => $this->faker->randomElement(["active", "inactive"]),
-            'created_at' => $this->faker->dateTimeBetween('2023-01-01', '2023-12-31'),
+            'created_at' => $this->faker->dateTimeBetween('2024-01-01', '2024-12-31'),
 
         ];
     }

@@ -5,17 +5,19 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
-{
-    /**
-     * Seed the application's database.
-     */
-    public function run(): void
-    {
-        // $this->call([
-        //     UserSeeder::class,
-        //     CountrySeeder::class,
-        // ]);
-        \App\Models\Player::factory(3000)->create();
-    }
+class DatabaseSeeder extends Seeder {
+	/**
+	 * Seed the application's database.
+	 */
+	public function run(): void {
+		$this->call([
+			/*UserSeeder::class,
+            TeamSeeder::class,*/
+			CategorySeeder::class,
+			/* CountrySeeder::class,*/
+		]);
+		// \App\Models\Player::factory(900)->create();
+		// \App\Models\Performance::factory(2700)->create();
+
+	}
 }

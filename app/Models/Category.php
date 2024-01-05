@@ -9,12 +9,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Category extends Model
 {
-    use HasFactory,Multitenantable,SoftDeletes;
+    use HasFactory,SoftDeletes;
 
     protected $guarded = [];
 
-    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    /*public function players(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->belongsTo(User::class);
-    }
+        return $this->hasMany(Player::class);
+    }*/
 }
