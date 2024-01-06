@@ -7,6 +7,14 @@
 
     <title>Home - Bounce Datasport</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Inter:400,500,600&display=swap" rel="stylesheet" />
@@ -47,8 +55,8 @@
                         <div class="mt-16 flow-root sm:mt-24">
                             <div
                                 class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                                <img src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-                                    alt="App screenshot" width="2432" height="1442"
+                                <img src="{{ asset('images/hero/hero-image.png')}}"
+                                    alt="Bounce Data Sport" width="2432" height="1442"
                                     class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
                             </div>
                         </div>
