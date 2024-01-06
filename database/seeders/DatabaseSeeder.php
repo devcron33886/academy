@@ -10,13 +10,13 @@ class DatabaseSeeder extends Seeder {
 	 * Seed the application's database.
 	 */
 	public function run(): void {
-		/*$this->call([
+		$this->call([
 			UserSeeder::class,
 			TeamSeeder::class,
 			CategorySeeder::class,
 			CountrySeeder::class,
-		]);*/
-		//\App\Models\Player::factory(6000)->create();
+		]);
+		\App\Models\Player::factory(6000)->create();
 		\App\Models\Performance::factory(24000)->create();
 
 	}
