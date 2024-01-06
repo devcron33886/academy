@@ -28,15 +28,13 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
-            ->spa()
             ->login()
             ->registration()
             ->passwordReset()
-            ->emailVerification()
             ->profile()
             ->breadcrumbs(false)
             ->sidebarCollapsibleOnDesktop()
-
+            ->spa()
             ->colors([
                 'danger' => Color::Red,
                 'gray' => Color::Slate,
@@ -52,8 +50,8 @@ class AdminPanelProvider extends PanelProvider
                 Pages\Dashboard::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
-            ->widgets([])
-
+            ->widgets([
+            ])
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
@@ -68,7 +66,6 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-            ->authGuard('web')
             ->databaseNotifications()
             ->databaseNotificationsPolling('30s')
             ->viteTheme('resources/css/filament/admin/theme.css')
@@ -77,7 +74,9 @@ class AdminPanelProvider extends PanelProvider
                     ->imageProvider(MyImages::make()->directory('images/')),
                 FilamentShieldPlugin::make(), // or use a custom image provider
 
-
-            ]);
+            ])
+            ->brandLogo(asset('images/logo/logo-black.png'))
+            ->brandLogoHeight('3.5rem')
+            ->favicon(asset('favicon-32x32.png'));
     }
 }
