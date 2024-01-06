@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Player;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class CategorySeeder extends Seeder {
@@ -31,6 +31,6 @@ class CategorySeeder extends Seeder {
 			],
 
 		];
-		Player::insert($categories);
+		Category::insert($categories);
 	}
 }
