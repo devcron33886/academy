@@ -413,7 +413,7 @@
             </div>
 
             <!-- FAQs -->
-            <x-faqs />
+            <x-faq-component />
 
             <!-- CTA section -->
             <div class="relative -z-10 mt-32 px-6 lg:px-8">
