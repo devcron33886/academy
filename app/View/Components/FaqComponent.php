@@ -15,7 +15,7 @@ class FaqComponent extends Component
      */
     public function render(): View|Closure|string
     {
-        $faqs = Faq::where('status', 1)->get();
+        $faqs = Faq::all();
         return view('components.faq-component', ['faqs' => $faqs]);
     }
 }
