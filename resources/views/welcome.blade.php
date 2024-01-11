@@ -55,9 +55,8 @@
                         <div class="mt-16 flow-root sm:mt-24">
                             <div
                                 class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                                <img src="{{ asset('images/hero/hero-image.png')}}"
-                                    alt="Bounce Data Sport" width="2432" height="1442"
-                                    class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+                                <img src="{{ asset('images/hero/hero-image.png') }}" alt="Bounce Data Sport"
+                                    width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
                             </div>
                         </div>
                     </div>
@@ -88,7 +87,8 @@
             <!-- Feature section -->
             <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
                 <div class="mx-auto max-w-2xl lg:text-center">
-                    <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
+                    <h2 class="text-base font-semibold leading-7 text-indigo-600">Get Everything you need about your
+                        player</h2>
                     <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to
                         track your player stats</p>
                     <p class="mt-6 text-lg leading-8 text-gray-600">We take care of Everything you need to keep track
@@ -110,8 +110,8 @@
                                 </div>
                                 Player Stats
                             </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus
-                                semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Improve your player skills in no brainer
+                                way.</dd>
                         </div>
                         <div class="relative pl-16">
                             <dt class="text-base font-semibold leading-7 text-gray-900">
@@ -126,8 +126,8 @@
                                 </div>
                                 Team Analytics
                             </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper
-                                ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</dd>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Get all numbers in one place. And it will
+                                help you to improve your team.</dd>
                         </div>
                         <div class="relative pl-16">
                             <dt class="text-base font-semibold leading-7 text-gray-900">
@@ -142,8 +142,8 @@
                                 </div>
                                 Easy to Use
                             </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus. Risus
-                                proin diam nunc commodo. Lobortis auctor congue commodo diam neque.</dd>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">We make sure it is easy to access your
+                                data anywhere at anytime.</dd>
                         </div>
                         <div class="relative pl-16">
                             <dt class="text-base font-semibold leading-7 text-gray-900">
@@ -158,8 +158,8 @@
                                 </div>
                                 Advanced security
                             </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum
-                                mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">We take care of your data,we don't share
+                                it with anyone. We make sure it is safe.</dd>
                         </div>
 
                     </dl>
@@ -190,9 +190,8 @@
                             alt="">
                         <figure>
                             <blockquote class="mt-6 text-lg font-semibold text-white sm:text-xl sm:leading-8">
-                                <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu
-                                    praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at.
-                                    Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</p>
+                                <p>“After we started using {{ config('app.name') }} we saw amazing growth. Our team has
+                                    improved in a number of ways,defense,attack,etc.”</p>
                             </blockquote>
                             <figcaption class="mt-6 text-base text-white">
                                 <div class="font-semibold">Eugene Ruboneka</div>
@@ -419,35 +418,38 @@
                 <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
                 <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
                     <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">What's the best thing
-                            about Switzerland?</dt>
+                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">What is
+                            {{ config('app.name') }} and how does it work?</dt>
                         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">I don't know, but the flag is a big plus.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam
-                                fugiat.</p>
+                            <p class="text-base leading-7 text-gray-600">{{ config('app.name') }} is a basketball
+                                statistics
+                                recording system designed to simplify the process of capturing and analyzing game data.
+                                It allows you to track player performance, team statistics, and more. To get started,
+                                simply <a href="/admin/login" wire:navigate class="text-underline">click here</a>.</p>
                         </dd>
                     </div>
                     <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">How do you make holy
-                            water?</dt>
+                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">What devices are
+                            compatible with {{ config('app.name') }}?</dt>
                         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">You boil the hell out of it. Lorem ipsum dolor
-                                sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga
-                                aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.</p>
+                            <p class="text-base leading-7 text-gray-600">{{ config('app.name') }} is compatible with
+                                mobile devices,iPads, and tablets plus desktops and laptops. Ensure that your device
+                                meets the system requirements
+                                for optimal performance.</p>
                         </dd>
                     </div>
                     <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">What do you call
-                            someone with no body and no nose?</dt>
+                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">How do I record
+                            player statistics during a game?</dt>
                         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">Nobody knows. Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Culpa, voluptas ipsa quia excepturi, quibusdam natus
-                                exercitationem sapiente tempore labore voluptatem.</p>
+                            <p class="text-base leading-7 text-gray-600">To record player statistics you need to fill
+                                out the simple form step by step. This typically involves selecting the player, choosing
+                                the relevant statistic (points, rebounds, assists, etc.), and inputting the data.</p>
                         </dd>
                     </div>
                     <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Why do you never see
-                            elephants hiding in trees?</dt>
+                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Can I customize the
+                            statistics categories tracked by {{ config('app.name') }}?</dt>
                         <dd class="mt-4 lg:col-span-7 lg:mt-0">
                             <p class="text-base leading-7 text-gray-600">Because they're so good at it. Lorem ipsum
                                 dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
@@ -512,8 +514,8 @@
                 class="relative border-t border-gray-900/10 py-24 sm:mt-56 sm:py-32">
                 <h2 id="footer-heading" class="sr-only">Footer</h2>
                 <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-                    <img class="h-7" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600"
-                        alt="Company name">
+                    <img class="h-7" src="{{ asset('images/logo/logo-black.png') }}"
+                        alt="{{ config('app.name') }}">
                     <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                         <div class="md:grid md:grid-cols-2 md:gap-8">
                             <div>
