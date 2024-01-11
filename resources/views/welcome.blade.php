@@ -413,70 +413,7 @@
             </div>
 
             <!-- FAQs -->
-            <div
-                class="mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pb-32">
-                <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-                <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">What is
-                            {{ config('app.name') }} and how does it work?</dt>
-                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">{{ config('app.name') }} is a basketball
-                                statistics
-                                recording system designed to simplify the process of capturing and analyzing game data.
-                                It allows you to track player performance, team statistics, and more. To get started,
-                                simply <a href="/admin/login" wire:navigate class="text-underline">click here</a>.</p>
-                        </dd>
-                    </div>
-                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">What devices are
-                            compatible with {{ config('app.name') }}?</dt>
-                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">{{ config('app.name') }} is compatible with
-                                mobile devices,iPads, and tablets plus desktops and laptops. Ensure that your device
-                                meets the system requirements
-                                for optimal performance.</p>
-                        </dd>
-                    </div>
-                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">How do I record
-                            player statistics during a game?</dt>
-                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">To record player statistics you need to fill
-                                out the simple form step by step. This typically involves selecting the player, choosing
-                                the relevant statistic (points, rebounds, assists, etc.), and inputting the data.</p>
-                        </dd>
-                    </div>
-                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Can I customize the
-                            statistics categories tracked by {{ config('app.name') }}?</dt>
-                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">Because they're so good at it. Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
-                        </dd>
-                    </div>
-                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Why can't you hear a
-                            pterodactyl go to the bathroom?</dt>
-                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">Because the pee is silent. Lorem ipsum dolor
-                                sit amet, consectetur adipisicing elit. Ipsam, quas voluptatibus ex culpa ipsum,
-                                aspernatur blanditiis fugiat ullam magnam suscipit deserunt illum natus facilis atque
-                                vero consequatur! Quisquam, debitis error.</p>
-                        </dd>
-                    </div>
-                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">Why did the invisible
-                            man turn down the job offer?</dt>
-                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">He couldn't see himself doing it. Lorem ipsum
-                                dolor sit, amet consectetur adipisicing elit. Eveniet perspiciatis officiis corrupti
-                                tenetur. Temporibus ut voluptatibus, perferendis sed unde rerum deserunt eius.</p>
-                        </dd>
-                    </div>
-
-                </dl>
-            </div>
+            <x-faqs />
 
             <!-- CTA section -->
             <div class="relative -z-10 mt-32 px-6 lg:px-8">
