@@ -16,6 +16,11 @@ class Player extends Model
 
     protected $guarded = [];
 
+    /**
+     * Retrieves the associated Country model for the current instance.
+     *
+     * @return BelongsTo The associated Country model.
+     */
     public function country(): BelongsTo
     {
         return $this->belongsTo(Country::class);
