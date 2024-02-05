@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,6 @@ Route::view('profile', 'profile')
     ->name('profile');
 
 require __DIR__ . '/auth.php';
+
+
+Route::post('/payment',[PaymentController::class, 'initiate'])->name('pay');

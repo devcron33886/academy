@@ -12,6 +12,14 @@ class Payment extends Model
 {
     use HasFactory,Multitenantable,SoftDeletes;
 
+    protected $casts=[
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
+        'paid_at' => 'datetime',
+        'expires_at' => 'datetime',
+    ];
+
     protected $guarded = [];
 
     public function user(): BelongsTo
